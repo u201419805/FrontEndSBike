@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">RentBike</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="title_stations">Estaciones</string>
+    <string name="title_rents">Alquileres</string>
+    <string name="title_incidents">Incidencias</string>
+</resources>
