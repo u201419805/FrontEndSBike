@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".viewcontrollers.activities.RegisterActivity"
+    tools:showIn="@layout/activity_register">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="100dp"/>
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        app:layout_constraintTop_toBottomOf="@id/image_picture"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryText"
+        android:text="@string/registerTitle_text"/>
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="match_parent"
+        android:layout_height="17dp"
+        android:layout_margin="@dimen/default_margin"
+        android:text="@string/mock_text"
+        android:textAlignment="center"
+        android:textColor="@color/colorSecondaryText"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_name" />
+
+    <TextView
+        android:id="@+id/text_email_label"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_textbox"
+        android:layout_margin="@dimen/default_margin"
+        app:layout_constraintTop_toBottomOf="@id/text_title"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/register_email_label"/>
+
+    <EditText
+        android:id="@+id/text_email"
+        android:layout_width="@dimen/width_textbox"
+        android:layout_height="@dimen/height_textbox"
+        android:layout_margin="@dimen/default_margin"
+        app:layout_constraintTop_toBottomOf="@id/text_title"
+        app:layout_constraintStart_toEndOf="@id/guideline_one" />
+
+    <TextView
+        android:id="@+id/text_password_label"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_textbox"
+        android:layout_margin="@dimen/default_margin"
+        app:layout_constraintTop_toBottomOf="@id/text_email_label"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/register_password_label"/>
+
+    <EditText
+        android:id="@+id/text_password"
+        android:layout_width="@dimen/width_textbox"
+        android:layout_height="@dimen/height_textbox"
+        android:layout_margin="@dimen/default_margin"
+        app:layout_constraintTop_toBottomOf="@id/text_email"
+        app:layout_constraintStart_toEndOf="@id/guideline_one"/>
+
+    <TextView
+        android:id="@+id/text_firstName_label"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_textbox"
+        android:layout_margin="@dimen/default_margin"
+        app:layout_constraintTop_toBottomOf="@id/text_password_label"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/register_firstName_label"/>
+
+    <EditText
+        android:id="@+id/text_firstName"
+        android:layout_width="@dimen/width_textbox"
+        android:layout_height="@dimen/height_textbox"
+        android:layout_margin="@dimen/default_margin"
+        app:layout_constraintTop_toBottomOf="@id/text_password"
+        app:layout_constraintStart_toEndOf="@id/guideline_one" />
+
+    <TextView
+        android:id="@+id/text_lastName_label"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_textbox"
+        android:layout_margin="@dimen/default_margin"
+        app:layout_constraintTop_toBottomOf="@id/text_firstName_label"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/register_lastName_label"/>
+
+    <EditText
+        android:id="@+id/text_lastName"
+        android:layout_width="@dimen/width_textbox"
+        android:layout_height="@dimen/height_textbox"
+        android:layout_margin="@dimen/default_margin"
+        app:layout_constraintTop_toBottomOf="@id/text_firstName"
+        app:layout_constraintStart_toEndOf="@id/guideline_one" />
+
+    <TextView
+        android:id="@+id/text_address_label"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_textbox"
+        android:layout_margin="@dimen/default_margin"
+        app:layout_constraintTop_toBottomOf="@id/text_lastName_label"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/register_address_label"/>
+
+    <EditText
+        android:id="@+id/text_address"
+        android:layout_width="@dimen/width_textbox"
+        android:layout_height="@dimen/height_textbox"
+        android:layout_margin="@dimen/default_margin"
+        app:layout_constraintTop_toBottomOf="@id/text_lastName"
+        app:layout_constraintStart_toEndOf="@id/guideline_one"/>
+
+    <TextView
+        android:id="@+id/text_phone_label"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_textbox"
+        android:layout_margin="@dimen/default_margin"
+        app:layout_constraintTop_toBottomOf="@id/text_address_label"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/register_phone_label"/>
+
+    <EditText
+        android:id="@+id/text_phone"
+        android:layout_width="@dimen/width_textbox"
+        android:layout_height="@dimen/height_textbox"
+        android:layout_margin="@dimen/default_margin"
+        app:layout_constraintStart_toEndOf="@id/guideline_one"
+        app:layout_constraintTop_toBottomOf="@id/text_address" />
+
+    <TextView
+        android:id="@+id/text_gender_label"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_textbox"
+        android:layout_margin="@dimen/default_margin"
+        app:layout_constraintTop_toBottomOf="@id/text_phone_label"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/register_gender_label"/>
+
+    <RadioButton
+        android:id="@+id/radio_genderF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        app:layout_constraintTop_toBottomOf="@id/text_phone"
+        app:layout_constraintStart_toEndOf="@id/guideline_one"
+        android:text="@string/Female"/>
+
+    <RadioButton
+        android:id="@+id/radio_genderM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        app:layout_constraintTop_toBottomOf="@id/text_phone"
+        app:layout_constraintStart_toEndOf="@id/radio_genderF"
+        android:text="@string/Male"/>
+
+    <TextView
+        android:id="@+id/text_birthday_label"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_textbox"
+        android:layout_margin="@dimen/default_margin"
+        app:layout_constraintTop_toBottomOf="@id/text_gender_label"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/register_birthday_label"/>
+
+    <EditText
+        android:id="@+id/text_birthday"
+        android:layout_width="@dimen/width_textbox"
+        android:layout_height="@dimen/height_textbox"
+        android:layout_margin="@dimen/default_margin"
+        app:layout_constraintStart_toEndOf="@id/guideline_one"
+        app:layout_constraintTop_toBottomOf="@id/radio_genderF" />
+
+    <TextView
+        android:id="@+id/text_DNI_label"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_textbox"
+        android:layout_margin="@dimen/default_margin"
+        app:layout_constraintTop_toBottomOf="@id/text_birthday_label"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/register_DNI_label"/>
+
+    <EditText
+        android:id="@+id/text_DNI"
+        android:layout_width="@dimen/width_textbox"
+        android:layout_height="@dimen/height_textbox"
+        android:layout_margin="@dimen/default_margin"
+        app:layout_constraintStart_toEndOf="@id/guideline_one"
+        app:layout_constraintTop_toBottomOf="@id/text_birthday" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_DNI_label"
+        android:text="@string/register_register_button"/>
+
+</android.support.constraint.ConstraintLayout>

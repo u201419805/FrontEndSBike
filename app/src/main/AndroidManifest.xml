@@ -2,7 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="biz.bikehub.rentbike">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
+        android:name=".RentBikeApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -10,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".LoginActivity"
+            android:name=".viewcontrollers.activities.LoginActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -20,8 +23,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
-            android:label="@string/title_activity_main"></activity>
+            android:name=".viewcontrollers.activities.MainActivity"
+            android:label="@string/title_activity_main" />
+        <activity android:name=".viewcontrollers.activities.OrderActivity" />
+        <activity
+            android:name=".viewcontrollers.activities.MainOpActivity"
+            android:label="@string/title_activity_main_op" />
+        <activity
+            android:name=".viewcontrollers.activities.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
